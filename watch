@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo watch jade start 
+jade --watch ./src/jade/*.jade --out . &
+
+echo watch sass start 
+sass --watch ./src/sass:./css &
+
+echo browser-sync start 
+browser-sync start --server --files "css/*.css, ./*.html, js/*.js"

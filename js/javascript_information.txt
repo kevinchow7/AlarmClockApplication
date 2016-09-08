@@ -1,0 +1,1 @@
+This is the javascript folder. Dump all your js file here. 

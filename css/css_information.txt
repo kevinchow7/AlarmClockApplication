@@ -1,0 +1,2 @@
+This is the CSS folder. Sass will automatically transpile the CSS files into here and browser-sync 
+will watch any changes here as well. 

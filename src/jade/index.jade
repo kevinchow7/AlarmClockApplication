@@ -1,0 +1,41 @@
+//* Development is meant strictly for desktop version. Mobile flexibility will be implemented later down the road.*//
+
+
+doctype html
+html(lang="en")
+  head
+    base(href="/")
+    meta(name="viewport" content="initial-scale=1")
+    title AlarmClock
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css", rel="stylesheet")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css", rel="stylesheet")
+    link(href="css/main.css", rel="stylesheet")
+
+    script(src="https://code.jquery.com/jquery-3.1.0.min.js")
+    //script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js")
+    script(src="js/main.js")
+    
+    
+    body
+    
+      .container
+        #AlarmClock 
+          .row 
+            .col.s12.m12.l3
+              <input type="text" value="0" class="dial-hour">     
+            .col.s12.m12.l3
+               <input type="text" value="0" class="dial-tenmin">
+            .col.s12.m12.l3
+              <input type="text" value="0" class="dial-min">
+            .col.s12.m12.l3
+              #AMPM 
+                #AM &nbsp; AM 
+                #PM &nbsp; PM
+             
+        #StartandEnd
+          .row 
+            .col.s6.m6.l6
+              #Start Start 
+            .col.s6.m6.l6 
+              #Reset Reset
